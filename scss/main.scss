@@ -73,3 +73,146 @@ main {
         }
     }
 }
+
+
+#main-footer {
+    margin-top: 2rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1.2%;
+    font-size: larger;
+    color: white;
+    background-color: black;
+    opacity: 0.93;
+
+}
+
+
+.about-info {
+    display: flex;
+
+    .bio-image img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: 3px solid $secoundary-color;
+        margin-top: 3rem;
+        margin-left: 3rem;
+    }
+
+    .bio {
+        height: auto;
+        margin: 20px;
+        padding: 1.7%;
+        font-size: 19px;
+        background: rgba(73, 73, 73, 0.2);
+        text-align: justify;
+    }
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+
+    .row {    
+        position: relative;    
+        display: flex;
+        background: rgba(73, 73, 73, 0.2);
+        margin: 10px 0 10px 0;
+        padding: 3rem;
+        font-size: larger;
+        line-height: 3rem;
+    }
+
+    #skills {
+        font-size: 3rem;
+    }
+
+    .col-1 {
+        width: 50%;
+        font-size: large;
+        font-weight: 500;
+    }
+
+    .col-2 {
+        width: 50%;
+        text-align: center;
+        vertical-align: middle;
+        margin-top: 3rem;
+
+        li {
+            list-style: none;
+            font-size: x-large;        
+        }
+
+        li:hover {
+            color: $secoundary-color;
+            cursor: default;
+        }
+    }
+}
+
+.full {
+    max-width: 400px;
+    height: 7px;
+    background-color: rgb(50, 49, 49);
+    border-radius: 10px;
+
+    .precentPHP {
+        max-width: 270px;
+        height: 7px;
+        border-radius: 10px;  
+        background-color: $secoundary-color;      
+    }
+
+    .precentLaravel {
+        max-width: 180px;
+        height: 7px;
+        border-radius: 10px;  
+        background-color: $secoundary-color;     
+    }
+
+    .precentSQL {
+        max-width: 330px;
+        height: 7px;
+        border-radius: 10px;  
+        background-color: $secoundary-color;      
+    }
+
+    .precentHTML {
+        max-width: 360px;
+        height: 7px;
+        border-radius: 10px;  
+        background-color: $secoundary-color;      
+    }
+
+    .precentJS {
+        max-width: 150px;
+        height: 7px;
+        border-radius: 10px;  
+        background-color: $secoundary-color;      
+    }
+
+    .precentCSS {
+        max-width: 253px;
+        height: 7px;
+        border-radius: 10px;  
+        background-color: $secoundary-color;      
+    }
+}
+
+canvas {
+    display: block;
+  }
+  
+  
+  /* ---- particles.js container ---- */
+  
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
