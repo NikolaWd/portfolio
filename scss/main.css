@@ -113,6 +113,25 @@
   transition-delay: 0.4s;
 }
 
+@media screen and (min-width: 1171px) {
+  .center {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .about-info {
+    flex-direction: column;
+  }
+  .about-info .bio-image {
+    text-align: center;
+  }
+  .row {
+    display: inline-block;
+  }
+  .center {
+    width: 60%;
+  }
+}
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
@@ -121,6 +140,16 @@
   main .lg-heading {
     line-height: 1;
     margin-bottom: 1rem;
+  }
+  .about-info {
+    flex-direction: column;
+  }
+  .about-info .bio-image {
+    text-align: center;
+  }
+  .about-info .bio-image img {
+    max-width: 200px;
+    max-height: 200px;
   }
   ul.menu-nav,
 div.menu-brending {
@@ -145,10 +174,57 @@ div.menu-brending.show {
     width: 150px;
     height: 150px;
   }
+  .row {
+    flex-direction: column;
+  }
+  .row .col-1 {
+    width: 100% !important;
+  }
+  .row .col-2 {
+    width: 100% !important;
+  }
+  main#contact h1 {
+    font-size: 4rem;
+    margin-top: 10vh;
+  }
+  .center {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 500px) {
   main#home h1 {
+    font-size: 4rem;
     margin-top: 10vh;
+  }
+  main#about h1 {
+    font-size: 4rem;
+    margin-top: 10vh;
+  }
+  main#work h1 {
+    font-size: 4rem;
+    margin-top: 10vh;
+  }
+  .about-info {
+    flex-direction: column;
+  }
+  .about-info .bio-image {
+    text-align: center;
+  }
+  .about-info .bio-image img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+  .about-info .bio {
+    width: 100%;
+    margin: 25px 0 0 0;
+    padding: 5px;
+  }
+  .projects .item a img {
+    width: 300px;
+    height: 250px;
+  }
+  .center {
+    width: 100% !important;
   }
 }
 * {
@@ -299,7 +375,7 @@ main#home h1 {
 }
 
 .full {
-  max-width: 400px;
+  max-width: 500px;
   height: 7px;
   background-color: rgb(50, 49, 49);
   border-radius: 10px;
@@ -366,6 +442,7 @@ canvas {
   transition: all 0.5s ease-out;
 }
 .projects .item {
+  position: relative;
   margin: 1rem;
   display: inline-block;
 }
@@ -389,5 +466,37 @@ canvas {
 }
 .btn-light:hover {
   background: #444;
+  transition: all 0.5s ease-out;
+}
+
+.center {
+  position: relative;
+  margin: auto;
+}
+
+input, textarea {
+  display: block;
+  width: -webkit-fill-available;
+  margin-bottom: 1.2rem;
+  opacity: 0.9;
+  background: #444;
+  font-size: larger;
+  border-radius: 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+input {
+  height: 3.2rem;
+}
+
+.btn {
+  color: black;
+  font-size: larger;
+  font-weight: bold;
+  background-color: darkgrey;
+}
+.btn:hover {
+  background-color: #eece1a;
   transition: all 0.5s ease-out;
 }/*# sourceMappingURL=main.css.map */

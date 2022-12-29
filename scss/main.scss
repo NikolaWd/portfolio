@@ -155,7 +155,7 @@ main {
 }
 
 .full {
-    max-width: 400px;
+    max-width: 500px;
     height: 7px;
     background-color: rgb(50, 49, 49);
     border-radius: 10px;
@@ -234,6 +234,7 @@ canvas {
     }
 
     .item {
+        position: relative;
         margin: 1rem;
         display: inline-block;
     }
@@ -263,5 +264,39 @@ canvas {
         background: $primary-color;
         @include easeOut;
     }
+}
+
+.center {
+    position: relative;
+    margin: auto;
+    //padding: 10px;
+}
+
+input, textarea {
+    display: block;
+    width: -webkit-fill-available;
+    margin-bottom: 1.2rem;
+    opacity: 0.9;
+    background: $primary-color;
+    font-size: larger;
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+input {
+    height: 3.2rem;
+}
+
+.btn {
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    background-color: darkgrey;
+    &:hover {
+        background-color: $secoundary-color;
+        @include easeOut;
+    }
+
 }
 
