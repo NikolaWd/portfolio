@@ -106,14 +106,21 @@
 
 // Smartphones
 @include mediaSm {
-    main#home h1 {
-        font-size: 4rem;
-        margin-top: 10vh;
+    main#home {
+        h1 {
+            font-size: 3rem;
+            margin-top: 10vh;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            margin-top: 5px;
+        }
     }
 
     
     main#about h1 {
-        font-size: 4rem;
+        font-size: 3rem;
         margin-top: 10vh;
     }
 
@@ -127,6 +134,7 @@
 
         .bio-image {
             text-align: center;
+            margin-left: -20px;
 
             img {
                 max-width: 150px;
@@ -135,8 +143,9 @@
         }
 
         .bio {
-            width: 100%;
-            margin: 25px 0 0 0;
+            max-width: 350px;
+            margin: 25px 0 0 -20px !important;
+            font-size: 16px !important;
             padding: 5px;
         }
     }
@@ -148,6 +157,14 @@
 
     .center {
         width: 100% !important;
+    }
+
+    .col-1 {
+        display: none;
+    }
+
+    .col-2 {
+        margin: 0 0 0 -10px !important;
     }
 }
 

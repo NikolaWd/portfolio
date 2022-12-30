@@ -193,11 +193,15 @@ div.menu-brending.show {
 }
 @media screen and (max-width: 500px) {
   main#home h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: 10vh;
+    margin-bottom: 10px;
+  }
+  main#home h2 {
+    margin-top: 5px;
   }
   main#about h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: 10vh;
   }
   main#work h1 {
@@ -209,14 +213,16 @@ div.menu-brending.show {
   }
   .about-info .bio-image {
     text-align: center;
+    margin-left: -20px;
   }
   .about-info .bio-image img {
     max-width: 150px;
     max-height: 150px;
   }
   .about-info .bio {
-    width: 100%;
-    margin: 25px 0 0 0;
+    max-width: 350px;
+    margin: 25px 0 0 -20px !important;
+    font-size: 16px !important;
     padding: 5px;
   }
   .projects .item a img {
@@ -225,6 +231,12 @@ div.menu-brending.show {
   }
   .center {
     width: 100% !important;
+  }
+  .col-1 {
+    display: none;
+  }
+  .col-2 {
+    margin: 0 0 0 -10px !important;
   }
 }
 * {
